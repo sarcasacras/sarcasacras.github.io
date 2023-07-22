@@ -1,5 +1,7 @@
+import Navbar from '../components/navbar';
+
 export default function Portfolio() {
     return (
-        <h1>Portfolio Page</h1>
+        <Navbar />
     )
 }

@@ -1,5 +1,7 @@
+import Navbar from '../components/navbar';
+
 export default function ErrorPage() {
     return (
-        <h1>Error Page</h1>
+        <Navbar />
     )
 }
