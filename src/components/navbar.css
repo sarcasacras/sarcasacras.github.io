@@ -5,6 +5,7 @@
 }
 
 .navbar {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -29,21 +30,17 @@
     text-decoration: none;
     font-size: 23px;
     color: black;
+    padding: 15px;
 }
 
 .active {
     color: #767676;
 }
-
-.active::before {
-    content: '';
-    color: black;
-    width: 120px;
-    height: 72px;
-    background: black;
-    position: absolute;
+.nav-stripe {
     z-index: -1;
-    transform: translate(-25%, -24%);
-    border-radius: 50px;
-    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    right: 50%;
+    transform: translateX(+48%);
+    transition: all 0.3s;
+    transition-delay: 0.2s;
 }
