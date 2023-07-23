@@ -37,8 +37,8 @@ const Navbar = () => {
     }, [hoveredLink]);
 
     return (
-        <nav>
-            <ul className="navbar">
+        <div className='nav-wrapper'>
+            <nav className='navbar'>
                 <li onMouseEnter={() => setHoveredLink('projects')} onMouseLeave={() => setHoveredLink('')}>
                     <NavLink to="/portfolio" className="nav-link">Projects</NavLink>
                 </li>
@@ -49,8 +49,8 @@ const Navbar = () => {
                     <NavLink to="/contacts" className="nav-link">Contacts</NavLink>
                 </li>
                 <img src="/src/assets/nav-stripe.png" alt="" className='nav-stripe' />
-            </ul>
-        </nav>
+            </nav>
+        </div>
     );
 };
 
