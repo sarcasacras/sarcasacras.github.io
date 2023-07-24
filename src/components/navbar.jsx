@@ -10,7 +10,7 @@ const Navbar = () => {
         const activeLink = document.querySelector('.active').innerHTML;
 
         let newPosition;
-        switch(hoveredLink) {
+        switch (hoveredLink) {
             case 'projects':
                 newPosition = '83%';
                 break;
@@ -21,14 +21,14 @@ const Navbar = () => {
                 newPosition = '17%';
                 break;
             default:
-                switch(activeLink){
+                switch (activeLink) {
                     case 'Projects':
                         newPosition = '83%'
                         break;
                     case 'Home':
                         newPosition = '50%'
                         break;
-                    case 'Contacts': 
+                    case 'Contacts':
                         newPosition = '17%';
                         break;
                 }

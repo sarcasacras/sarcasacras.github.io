@@ -10,6 +10,7 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
 .navbar {
     position: relative;
     display: flex;
@@ -40,6 +41,7 @@
 .active {
     color: #767676;
 }
+
 .nav-stripe {
     z-index: -1;
     position: absolute;
