@@ -5,11 +5,11 @@ export default function Root() {
     return (
         <main>
             <Navbar />
-            <div className='main-section1'>
+            <div className='main-section first'>
                 <img src="src/assets/Ellipse.png" alt="" />
-                <p>Hello, my name is Andrei!</p>
+                <p>Hello, i am Andrei!</p>
             </div>
-            <div className='main-section2'>
+            <div className='main-section second'>
                 <img src="src/assets/Ellipse.png" alt="" />
                 <p>I am a passionate Full-Stack Developer</p>
             </div>
