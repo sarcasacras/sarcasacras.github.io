@@ -1,5 +1,6 @@
 import Navbar from '../components/navbar';
 import Sidebar from '../components/Sidebar';
+import Footer from '../components/footer'
 import './home.css'
 
 export default function Root() {
@@ -38,6 +39,14 @@ export default function Root() {
                     </div>
                 </div>
             </div>
+            <div className='main-section fourth section' id='section4'>
+                <h2>Check Out!</h2>
+                <div className='button-container'>
+                    <button className="main-btn">My CV</button>
+                    <button className="main-btn">Portfolio</button>
+                </div>
+            </div>
+            <Footer />
         </main>
     )
 }
