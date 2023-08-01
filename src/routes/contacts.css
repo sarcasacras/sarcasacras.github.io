@@ -30,8 +30,42 @@ h1 {
     width: 70px;
     height: 70px;
 }
+.mobile {
+    display: none;
+}
 
 /* rs = right side */
 .rs {
     justify-content: flex-end;
+}
+
+@media (max-width: 1400px) {
+    .contact-container {
+        width: 900px;
+    }
+}
+@media (max-width: 950px) {
+    .contact img {
+        width: 40px;
+        height: 40px;
+    }
+    .contact p {
+        font-size: 20px;
+    }
+    .contact-container {
+        width: 80%;
+    }
+}
+@media (max-width: 750px) {
+    .contact-container {
+        flex-direction: column;
+    }
+    .rs {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 50px;
+    }
 }

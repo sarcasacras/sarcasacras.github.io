@@ -26,6 +26,7 @@ export default function Root() {
                             <li>• CSS 3</li>
                             <li>• JavaScript</li>
                             <li>• React</li>
+                            <li>• Figma</li>
                         </ul>
                     </div>
                     <div className='skill-group'>

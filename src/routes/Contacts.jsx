@@ -28,6 +28,15 @@ export default function Contacts() {
                             <p>Facebook</p>
                             <img src="src/assets/facebook-l.png" alt="" />
                         </div>
+
+                        <div className='contact mobile'>
+                            <img src="src/assets/mail-l.png" className='mail-icon' alt="" />
+                            <p>dewaleguitar@gmail.com</p>
+                        </div>
+                        <div className='contact mobile'>
+                            <img src="src/assets/facebook-l.png" alt="" />
+                            <p>Facebook</p>
+                        </div>
                     </div>
                 </div>
             <Footer />

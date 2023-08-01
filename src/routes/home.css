@@ -118,3 +118,71 @@ html {
     justify-content: center;
     margin-top: 90px;
 }
+
+
+@media (max-width: 1200px) {
+    .first {
+        flex-direction: column;
+    }
+    .first p {
+        margin-left: 0px;
+    }
+    .second p {
+        text-align: center;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+@media (max-width: 1000px) {
+    .skill-group {
+        margin: 0 60px;
+    }
+    .main-btn {
+        width: 250px;
+        height: 100px;
+        font-size: 30px;
+    }
+}
+@media (max-width: 800px) {
+    .skill-group {
+        margin: 30px 0;
+        width: 400px;
+        height: 500px;
+    }
+    .skill-group:nth-child(2){
+        margin-bottom: 100px;
+    }
+    .skill-container {
+        flex-direction: column;
+    }
+    .third {
+        height: fit-content;
+    }
+    .third h2 {
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+    .main-btn {
+        margin: 0 15px;
+    }
+    .main-section p {
+        font-size: 35px;
+    }
+}
+@media (max-width: 600px) {
+    .button-container {
+        flex-direction: column;
+    }
+    .main-btn {
+        margin: 20px 0;
+    }
+}
+@media (max-width: 500px) {
+    .skill-group {
+        width: 300px;
+        height: 420px;
+    }
+    .skill-list li {
+        font-size: 25px;
+    }
+}
