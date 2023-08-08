@@ -1,16 +1,24 @@
+import { useEffect } from 'react';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer'
 import './portfolio.css'
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Portfolio() {
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
+
     return (
         <main>
             <Navbar />
 
             <div className='project-container'>
 
-                <div className="project left">
+                <div data-aos="zoom-in-left" className="project left">
                     <img src="src/assets/artroom-th.png" alt="" className='project-thumb' />
                     <div className='project-flex'>
                         <div className='project-info'>
@@ -28,7 +36,7 @@ export default function Portfolio() {
                     </div>
                 </div>
 
-                <div className="project right">
+                <div data-aos="zoom-in-right" className="project right">
                     <img src="src/assets/davidsan-th.png" alt="" className='project-thumb' />
                     <div className='project-flex'>
                         <div className='project-info'>
