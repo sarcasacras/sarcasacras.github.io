@@ -24,7 +24,6 @@ html {
     font-size: 55px;
     padding-right: 5px;
     margin-top: 90px;
-    margin-left: 130px;
 }
 .second {
     background-color: #D1D1D1;
@@ -129,10 +128,10 @@ html {
     .first {
         flex-direction: column;
     }
-    .first p {
+    .first-type {
         margin-left: 0px;
     }
-    .second p {
+    .second-type {
         text-align: center;
         margin-right: 20px;
         margin-left: 20px;
