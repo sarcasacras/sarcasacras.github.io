@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import './navbar.css';
+import logo from './nav-stripe.png'
+
 
 const Navbar = () => {
     const [hoveredLink, setHoveredLink] = useState('');
@@ -48,7 +50,7 @@ const Navbar = () => {
                 <li onMouseEnter={() => setHoveredLink('contacts')} onMouseLeave={() => setHoveredLink('')}>
                     <NavLink to="/contacts" className="nav-link">Contacts</NavLink>
                 </li>
-                <img src="/public/nav-stripe.png" alt="" className='nav-stripe' />
+                <img src={logo} alt="" className='nav-stripe' />
             </nav>
         </div>
     );
