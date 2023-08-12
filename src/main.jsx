@@ -11,7 +11,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
