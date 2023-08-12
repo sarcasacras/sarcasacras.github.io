@@ -48,7 +48,7 @@ const Navbar = () => {
                 <li onMouseEnter={() => setHoveredLink('contacts')} onMouseLeave={() => setHoveredLink('')}>
                     <NavLink to="/contacts" className="nav-link">Contacts</NavLink>
                 </li>
-                <img src="/src/assets/nav-stripe.png" alt="" className='nav-stripe' />
+                <img src="./src/assets/nav-stripe.png" alt="" className='nav-stripe' />
             </nav>
         </div>
     );
