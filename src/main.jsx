@@ -7,11 +7,12 @@ import Contacts from './routes/Contacts.jsx'
 import Portfolio from './routes/Portfolio.jsx'
 
 import {
+  createHashRouter,
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Root />,
