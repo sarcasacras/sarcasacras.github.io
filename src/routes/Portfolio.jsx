@@ -11,6 +11,7 @@ import htmlIcon from '../../public/html.png';
 import cssIcon from '../../public/css.png';
 import jsIcon from '../../public/JavaScript.png';
 import nodejsIcon from '../../public/NodeJs.png';
+import { ScrollRestoration } from "react-router-dom";
 
 export default function Portfolio() {
 
@@ -21,8 +22,8 @@ export default function Portfolio() {
 
     return (
         <main>
+            <ScrollRestoration />
             <Navbar />
-
             <div className='project-container'>
 
                 <div data-aos="zoom-in-left" className="project left">

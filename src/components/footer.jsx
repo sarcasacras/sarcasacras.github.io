@@ -10,9 +10,15 @@ export default function Footer() {
     return (
         <footer>
             <div className="ftr-container">
-                <img className="media-icon" src={linkedin} alt="" />
-                <img className="media-icon" src={github} alt="" />
-                <img className="media-icon" src={facebook} alt="" />
+                <a className="media-icon" href="https://www.linkedin.com/in/andrei-davidovich-963569277/">
+                    <img src={linkedin} alt="" />
+                </a>
+                <a className="media-icon" href="https://github.com/sarcasacras">
+                    <img src={github} alt="" />
+                </a>
+                <a className="media-icon" href="your-link-to-facebook">
+                    <img src={facebook} alt="" />
+                </a>
             </div>
             <div className="ftr-container">
                 <img src={mail} alt="" />

@@ -6,10 +6,12 @@ import linkedinL from '../../public/linkedin-l.png';
 import githubL from '../../public/github-l.png';
 import mailL from '../../public/mail-l.png';
 import facebookL from '../../public/facebook-l.png';
+import { ScrollRestoration } from "react-router-dom";
 
 export default function Contacts() {
     return (
         <main>
+            <ScrollRestoration />
             <Navbar />
             <h1>My contact info</h1>
             <div className='contact-container'>

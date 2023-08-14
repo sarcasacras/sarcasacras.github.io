@@ -7,6 +7,7 @@ import Contacts from './routes/Contacts.jsx'
 import Portfolio from './routes/Portfolio.jsx'
 
 import {
+  ScrollRestoration,
   createHashRouter,
   createBrowserRouter,
   RouterProvider,

@@ -6,6 +6,8 @@ import './home.css'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import TypeIt from "typeit-react";
+import { Link } from "react-router-dom";
+import { ScrollRestoration } from "react-router-dom";
 
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 
@@ -21,6 +23,7 @@ export default function Root() {
     
     return (
         <main>
+            <ScrollRestoration />
             <Navbar />
             <Sidebar />
             <div className='main-section first section' id='section1'>
@@ -72,8 +75,8 @@ export default function Root() {
             <div className='main-section fourth section' id='section4'>
                 <h2 data-aos="zoom-in">Check Out!</h2>
                 <div className='button-container'>
-                    <button data-aos="zoom-in-left" data-aos-delay="100" className="main-btn">My CV</button>
-                    <button data-aos="zoom-in-right" data-aos-delay="100" className="main-btn">Portfolio</button>
+                    <Link data-aos="zoom-in-left" data-aos-delay="100" className="main-btn" to="">My CV</Link>
+                    <Link data-aos="zoom-in-left" data-aos-delay="100" className="main-btn" to="/portfolio">Portfolio</Link>
                 </div>
             </div>
             <Footer />
