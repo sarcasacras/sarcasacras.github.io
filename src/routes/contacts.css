@@ -5,6 +5,10 @@ h1 {
     font-size: 35px;
     font-family: "Electrolize";
 }
+a {
+    color: black;
+    text-decoration: none;
+}
 .contact-container {
     display: flex;
     justify-content: space-between;

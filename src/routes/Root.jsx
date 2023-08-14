@@ -28,20 +28,20 @@ export default function Root() {
             <Sidebar />
             <div className='main-section first section' id='section1'>
                 <Player
+                    className="player-1"
                     autoplay
                     loop
                     src="https://lottie.host/e5f99fc1-5544-4a6b-aeb6-ae1423e39cd4/ajRPV8HLMc.json"
-                    style={{ height: '400px', width: '400px' }}
                 >
                 </Player>
                 <TypeIt className="first-type">Hello, I am <span id="main-name">Andrei</span></TypeIt>
             </div>
             <div className='main-section second section' id='section2'>
                 <Player
+                    className="player-1"
                     autoplay
                     loop
                     src="https://lottie.host/046b3be9-ab2a-49df-883e-c8755dd415e8/YFax095q5Z.json"
-                    style={{ height: '400px', width: '400px' }}
                 >
                 </Player>
                 <TypeIt options={{waitUntilVisible: true}} className="second-type">
