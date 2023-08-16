@@ -16,7 +16,7 @@ export default function Footer() {
                 <a className="media-icon" href="https://github.com/sarcasacras">
                     <img src={github} alt="" />
                 </a>
-                <a className="media-icon" href="your-link-to-facebook">
+                <a className="media-icon" href="https://www.facebook.com/profile.php?id=61550098111202">
                     <img src={facebook} alt="" />
                 </a>
             </div>
