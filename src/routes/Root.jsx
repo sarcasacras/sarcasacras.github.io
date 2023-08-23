@@ -7,6 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import TypeIt from "typeit-react";
 import { Link } from "react-router-dom";
+import CV from '../../public/CV.pdf';
 import { ScrollRestoration } from "react-router-dom";
 
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
@@ -75,7 +76,7 @@ export default function Root() {
             <div className='main-section fourth section' id='section4'>
                 <h2 data-aos="zoom-in">Check Out!</h2>
                 <div className='button-container'>
-                    <Link data-aos="zoom-in-left" data-aos-delay="100" className="main-btn" to="">My CV</Link>
+                    <a data-aos="zoom-in-left" data-aos-delay="100" className="main-btn" href={CV}>My CV</a>
                     <Link data-aos="zoom-in-left" data-aos-delay="100" className="main-btn" to="/portfolio">Portfolio</Link>
                 </div>
             </div>
