@@ -94,7 +94,7 @@ export default function Portfolio() {
                             <img src={cssIcon} alt="" />
                             <img src={jsIcon} alt="" />
                         </div>
-                        <a href="https://ex10101.github.io/g-setup"><button className='open-btn'>Open</button></a>
+                        <a href="https://sarcasacras.github.io/g-setup"><button className='open-btn'>Open</button></a>
                     </div>
                 </div>
 
