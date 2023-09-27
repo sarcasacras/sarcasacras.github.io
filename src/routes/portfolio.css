@@ -1,5 +1,5 @@
 .project {
-    width: 950px;
+    width: 970px;
     height: 530px;
     display: flex;
     border: 2px solid #BABABA;
@@ -14,6 +14,9 @@
     margin-left: 550px;
 }
 
+.btn-container {
+    margin-bottom: 70px;
+}
 .project-container {
     display: flex;
     flex-direction: column;
@@ -53,13 +56,13 @@
     cursor: pointer;
     width: 250px;
     height: 80px;
+    margin-right: 15px;
     border-radius: 50px;
     border: 4px solid #4E4FEB;
     background: rgba(255, 255, 255, 0.00);
     color: #4E4FEB;
     font-family: Electrolize;
     font-size: 30px;
-    margin-bottom: 55px;
     transition: 0.2s all;
 }
 .open-btn:hover {
@@ -97,11 +100,24 @@
         width: 100%;
         object-fit: cover;
     }
-    .project-flex {
+    /* .project-flex {
         height: 450px;
-    }
+    } */
     .project-info p {
         width: 70%;
+    }
+    .btn-container {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 750px){
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .open-btn {
+        margin: 10px 0;
     }
 }
 @media (max-width: 600px){
@@ -116,6 +132,7 @@
         font-size: 23px;
     }
     .project-info p {
+        margin-bottom: 15px;
         font-size: 17px;
         width: 90%;
     }
@@ -128,5 +145,6 @@
     .open-btn {
         width: 200px;
         height: 75px;
+        font-size: 20px;
     }
 }

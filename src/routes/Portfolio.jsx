@@ -42,7 +42,10 @@ export default function Portfolio() {
                             <img src={jsIcon} alt="" />
                             <img src={nodejsIcon} alt="" />
                         </div>
-                        <a href="https://artroom-design.com/"><button className='open-btn'>Open</button></a>
+                        <div className='btn-container'>
+                            <a href="https://artroom-design.com/"><button className='open-btn'>Live version</button></a>
+                            <a href="https://artroom-design.com/"><button className='open-btn'>Github page</button></a>
+                        </div>
                     </div>
                 </div>
 
@@ -60,7 +63,10 @@ export default function Portfolio() {
                             <img src={jsIcon} alt="" />
                             <img src={nodejsIcon} alt="" />
                         </div>
-                        <a href="https://david-san.art/"><button className='open-btn'>Open</button></a>
+                        <div className='btn-container'>
+                            <a href="https://david-san.art/"><button className='open-btn'>Live version</button></a>
+                            <a href="https://david-san.art/"><button className='open-btn'>Github page</button></a>
+                        </div>
                     </div>
                 </div>
 
@@ -78,7 +84,10 @@ export default function Portfolio() {
                             <img src={jsIcon} alt="" />
                             <img src={nodejsIcon} alt="" />
                         </div>
-                        <a href="https://d2.up.railway.app/"><button className='open-btn'>Open</button></a>
+                        <div className='btn-container'>
+                            <a href="https://d2.up.railway.app/"><button className='open-btn'>Live version</button></a>
+                            <a href="https://d2.up.railway.app/"><button className='open-btn'>Github page</button></a>
+                        </div>
                     </div>
                 </div>
                 <div data-aos="zoom-in-right" className="project right">
@@ -94,7 +103,10 @@ export default function Portfolio() {
                             <img src={cssIcon} alt="" />
                             <img src={jsIcon} alt="" />
                         </div>
-                        <a href="https://sarcasacras.github.io/g-setup"><button className='open-btn'>Open</button></a>
+                        <div className='btn-container'>
+                            <a href="https://sarcasacras.github.io/g-setup"><button className='open-btn'>Live version</button></a>
+                            <a href="https://sarcasacras.github.io/g-setup"><button className='open-btn'>Github page</button></a>
+                        </div>
                     </div>
                 </div>
 

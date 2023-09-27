@@ -35,7 +35,7 @@ export default function Root() {
                     src="https://lottie.host/e5f99fc1-5544-4a6b-aeb6-ae1423e39cd4/ajRPV8HLMc.json"
                 >
                 </Player>
-                <TypeIt className="first-type">Hello, I am <span id="main-name">Andrei</span></TypeIt>
+                <TypeIt options={{speed: 50}} className="first-type">Hello, I am <span id="main-name">Andrei</span></TypeIt>
             </div>
             <div className='main-section second section' id='section2'>
                 <Player
@@ -45,7 +45,7 @@ export default function Root() {
                     src="https://lottie.host/046b3be9-ab2a-49df-883e-c8755dd415e8/YFax095q5Z.json"
                 >
                 </Player>
-                <TypeIt options={{waitUntilVisible: true}} className="second-type">
+                <TypeIt options={{waitUntilVisible: true, speed: 50}} className="second-type">
                     I am a passionate <span id="main-name">Full-Stack Developer</span>
                 </TypeIt>
             </div>
@@ -58,8 +58,7 @@ export default function Root() {
                             <li>• HTML 5</li>
                             <li>• CSS 3</li>
                             <li>• JavaScript</li>
-                            <li>• React</li>
-                            <li>• Figma</li>
+                            <li>• React.js</li>
                         </ul>
                     </div>
                     <div data-aos="zoom-in" data-aos-delay="200" className='skill-group'>
@@ -69,6 +68,17 @@ export default function Root() {
                             <li>• Express.js</li>
                             <li>• MongoDB</li>
                             <li>• Mongoose</li>
+                            <li>• RESTful API</li>
+                        </ul>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="200" className='skill-group'>
+                        <h3>Other:</h3>
+                        <ul className='skill-list'>
+                            <li>• Git version control system</li>
+                            <li>• Photoshop</li>
+                            <li>• Figma</li>
+                            <li>• After Effects</li>
+                            <li>• Basic UI/UX design concepts</li>
                         </ul>
                     </div>
                 </div>
