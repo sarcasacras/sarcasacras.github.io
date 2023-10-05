@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import './navbar.css';
+import hamburger from '../../public/hamburger.svg';
 
 
 import stripe from '../../public/nav-stripe.png'
@@ -24,6 +25,9 @@ const Navbar = () => {
             case 'contacts':
                 newPosition = '17%';
                 break;
+            case 'about':
+                newPosition = '50%';
+                break;
             default:
                 switch (activeLink) {
                     case 'Projects':
@@ -35,6 +39,9 @@ const Navbar = () => {
                     case 'Contacts':
                         newPosition = '17%';
                         break;
+                    case 'About':
+                        newPosition = '50%';
+                        break;
                 }
         }
         stripe.style.right = newPosition;
@@ -43,15 +50,19 @@ const Navbar = () => {
     return (
         <div className='nav-wrapper'>
             <nav className='navbar'>
-                <li onMouseEnter={() => setHoveredLink('projects')} onMouseLeave={() => setHoveredLink('')}>
-                    <NavLink to="/portfolio" className="nav-link">Projects</NavLink>
-                </li>
                 <li onMouseEnter={() => setHoveredLink('home')} onMouseLeave={() => setHoveredLink('')}>
                     <NavLink to="/" exact className="nav-link">Home</NavLink>
+                </li>
+                <li onMouseEnter={() => setHoveredLink('projects')} onMouseLeave={() => setHoveredLink('')}>
+                    <NavLink to="/portfolio" className="nav-link">Projects</NavLink>
                 </li>
                 <li onMouseEnter={() => setHoveredLink('contacts')} onMouseLeave={() => setHoveredLink('')}>
                     <NavLink to="/contacts" className="nav-link">Contacts</NavLink>
                 </li>
+                <li onMouseEnter={() => setHoveredLink('about')} onMouseLeave={() => setHoveredLink('')}>
+                    <NavLink to="/about" className="nav-link">About</NavLink>
+                </li>
+                <img src={hamburger} width="35px" height="35px" className="hamburger" alt="" />
                 <img src={stripe} alt="" className='nav-stripe' />
             </nav>
         </div>
@@ -59,4 +70,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
