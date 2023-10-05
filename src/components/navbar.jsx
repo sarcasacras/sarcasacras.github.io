@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import './navbar.css';
-import hamburger from '../../public/hamburger.svg';
+import hamburgerIcon from '../../public/hamburger.svg';
 
 
 import stripe from '../../public/nav-stripe.png'
@@ -62,7 +62,7 @@ const Navbar = () => {
                 <li onMouseEnter={() => setHoveredLink('about')} onMouseLeave={() => setHoveredLink('')}>
                     <NavLink to="/about" className="nav-link">About</NavLink>
                 </li>
-                <img src={hamburger} width="35px" height="35px" className="hamburger" alt="" />
+                <img src={hamburgerIcon} width="35px" height="35px" className="hamburger" alt="" />
                 <img src={stripe} alt="" className='nav-stripe' />
             </nav>
         </div>
