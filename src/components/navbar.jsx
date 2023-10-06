@@ -9,6 +9,7 @@ import stripe from '../../public/nav-stripe.png'
 
 const Navbar = () => {
     const [hoveredLink, setHoveredLink] = useState('');
+    const navbar = document.querySelector('.navbar');
 
     useEffect(() => {
         const stripe = document.querySelector('.nav-stripe');
@@ -46,10 +47,14 @@ const Navbar = () => {
         }
         stripe.style.right = newPosition;
     }, [hoveredLink]);
-
+    
+    function handleHamClick() {
+        navbar.classList.toggle("nav-active");
+    }
+    
     return (
         <div className='nav-wrapper'>
-            <nav className='navbar'>
+            <nav className='navbar nav-active'>
                 <li onMouseEnter={() => setHoveredLink('home')} onMouseLeave={() => setHoveredLink('')}>
                     <NavLink to="/" exact className="nav-link">Home</NavLink>
                 </li>
@@ -62,11 +67,12 @@ const Navbar = () => {
                 <li onMouseEnter={() => setHoveredLink('about')} onMouseLeave={() => setHoveredLink('')}>
                     <NavLink to="/about" className="nav-link">About</NavLink>
                 </li>
-                <img src={hamburgerIcon} width="35px" height="35px" className="hamburger" alt="" />
+                <img src={hamburgerIcon} width="35px" height="35px" onClick = {handleHamClick} className="hamburger" alt="" />
                 <img src={stripe} alt="" className='nav-stripe' />
             </nav>
         </div>
     );
+    
 };
 
 export default Navbar;
