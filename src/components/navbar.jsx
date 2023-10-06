@@ -48,13 +48,11 @@ const Navbar = () => {
         stripe.style.right = newPosition;
     }, [hoveredLink]);
     
-    function handleHamClick() {
-        navbar.classList.toggle("nav-active");
-    }
+    
     
     return (
         <div className='nav-wrapper'>
-            <nav className='navbar nav-active'>
+            <nav className='navbar'>
                 <li onMouseEnter={() => setHoveredLink('home')} onMouseLeave={() => setHoveredLink('')}>
                     <NavLink to="/" exact className="nav-link">Home</NavLink>
                 </li>
@@ -72,6 +70,10 @@ const Navbar = () => {
             </nav>
         </div>
     );
+    
+    function handleHamClick() {
+        navbar.classList.toggle("nav-active");
+    }
     
 };
 
