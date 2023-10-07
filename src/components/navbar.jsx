@@ -9,8 +9,7 @@ import stripe from '../../public/nav-stripe.png'
 
 const Navbar = () => {
     const [hoveredLink, setHoveredLink] = useState('');
-    const navbar = document.querySelector('.navbar');
-
+    
     useEffect(() => {
         const stripe = document.querySelector('.nav-stripe');
         const activeLink = document.querySelector('.active').innerHTML;
@@ -49,12 +48,13 @@ const Navbar = () => {
     }, [hoveredLink]);
     
     function handleHamClick() {
+        const navbar = document.querySelector('.navbar');
         navbar.classList.toggle("nav-active");
     }
     
     return (
         <div className='nav-wrapper'>
-            <nav className='navbar nav-active'>
+            <nav className='navbar'>
                 <li onMouseEnter={() => setHoveredLink('home')} onMouseLeave={() => setHoveredLink('')}>
                     <NavLink to="/" exact className="nav-link">Home</NavLink>
                 </li>
