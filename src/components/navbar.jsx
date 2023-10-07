@@ -73,6 +73,10 @@ const Navbar = () => {
         </div>
     );
     
+    function handleHamClick() {
+        navbar.classList.toggle("nav-active");
+    }
+    
 };
 
 export default Navbar;
