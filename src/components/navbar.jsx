@@ -17,30 +17,30 @@ const Navbar = () => {
         let newPosition;
         switch (hoveredLink) {
             case 'projects':
-                newPosition = '83%';
+                newPosition = '63.3%';
                 break;
             case 'home':
-                newPosition = '50%';
+                newPosition = '87.8%';
                 break;
             case 'contacts':
-                newPosition = '17%';
+                newPosition = '36.8%';
                 break;
             case 'about':
-                newPosition = '50%';
+                newPosition = '11.8%';
                 break;
             default:
                 switch (activeLink) {
                     case 'Projects':
-                        newPosition = '83%'
+                        newPosition = '63.3%'
                         break;
                     case 'Home':
-                        newPosition = '50%'
+                        newPosition = '87.8%'
                         break;
                     case 'Contacts':
-                        newPosition = '17%';
+                        newPosition = '36.8%';
                         break;
                     case 'About':
-                        newPosition = '50%';
+                        newPosition = '11.8%';
                         break;
                 }
         }
@@ -72,10 +72,6 @@ const Navbar = () => {
             </nav>
         </div>
     );
-    
-    function handleHamClick() {
-        navbar.classList.toggle("nav-active");
-    }
     
 };
 

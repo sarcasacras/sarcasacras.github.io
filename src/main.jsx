@@ -5,6 +5,7 @@ import Root from './routes/Root.jsx'
 import ErrorPage from './routes/ErrorPage.jsx'
 import Contacts from './routes/Contacts.jsx'
 import Portfolio from './routes/Portfolio.jsx'
+import About from './routes/About.jsx'
 
 import {
   ScrollRestoration,
@@ -26,6 +27,10 @@ const router = createHashRouter([
   {
     path: "/portfolio",
     element: <Portfolio />,
+  },
+  {
+    path: "/about",
+    element: <About />,
   },
 ]);
 
